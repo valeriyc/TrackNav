@@ -42,17 +42,17 @@ public class MainActivity extends Activity {
 //            return;
 //        }
 //
-//        Intent mIntent = new Intent(this, LocalService.class);
+//        Intent mIntent = new Intent(this, NavigationService.class);
 //        mIntent.putExtra(FileChooser.SELECTED_FILE, selectedFile);
 
         ///
-        startService(new Intent(MainActivity.this,LocalService.class));
+        startService(new Intent(MainActivity.this,NavigationService.class));
     }
 
 
     public void stopNavigation(View view){
         gpsTrackerService.stopUsingGPS();
-        stopService(new Intent(MainActivity.this, LocalService.class));
+        stopService(new Intent(MainActivity.this, NavigationService.class));
     }
 
 

@@ -18,7 +18,7 @@ import net.divbyzero.gpx.parser.ParsingException;
 import java.io.File;
 import java.util.*;
 
-public class LocalService extends Service implements TextToSpeech.OnInitListener
+public class NavigationService extends Service implements TextToSpeech.OnInitListener
 {
     private static Timer timer = new Timer();
     private Context ctx;

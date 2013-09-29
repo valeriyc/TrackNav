@@ -23,7 +23,7 @@
 
         <!--<service android:enabled="true" android:name=".GPSTrackerService"/>-->
 
-        <service android:enabled="true" android:name=".LocalService"/>
+        <service android:enabled="true" android:name=".NavigationService"/>
 
     </application>
 </manifest> 
